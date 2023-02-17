@@ -1,0 +1,23 @@
+.cabecalho__menu{
+    display: none;
+    position: fixed;
+    background: #302325;
+    width: 50vw;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    padding: 20px;
+}
+
+.menu__item{
+    display: block;
+    padding: 15px;
+}
+
+.cabecalho__menu-burger{
+    left: 20px;
+    position: absolute;
+    color: #FFF2E7;
+    display: block;
+    cursor: pointer;
+}

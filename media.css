@@ -1,0 +1,33 @@
+.conteudo__principal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.conteudo__principal__texto{
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal__titulo {
+    text-align: center;
+}
+
+.principal__subtitulo {
+   text-align: center;
+}
+
+.principal__imagem{
+    width: 70%;
+}
+.conteudo{
+    margin: 0% 5% 0% 5%;
+}
+.cabecalho__menu-burger{
+    display: none;
+}
+
+#burger{
+    display: none;
+}

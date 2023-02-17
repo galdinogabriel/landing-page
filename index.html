@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lading Page criada usando HTML e CSS.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css" media="screen
+    and (max-width: 768px)">
+    <link rel="stylesheet" href="media-mobile.css" media="screen
+    and (max-width: 600px)">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <title>Landing Page</title>
 </head>
 
@@ -12,12 +21,14 @@
 
     <body>
         <header class="cabecalho">
-            <img src="" alt="" class="cabecalho__logo">
+        
+            <div class="cabecalho__menu-burger" onclick="clickMenu()"><span id="menu__hamburger-icon" class="material-symbols-outlined">MENU</div></h2>
+            <h1 class="cabecalho__logo-text">Vera.i</h1>
             <nav class="cabecalho__menu">
-                <a href="" class="menu__item">Landing Page</a>
-                <a href="" class="menu__item">Teste 1</a>
-                <a href="" class="menu__item">Teste 2</a>
-                <a href="" class="menu__item">Teste 3</a>
+                <a href="" class="menu__item">Início</a>
+                <a href="" class="menu__item">Tutorial</a>
+                <a href="" class="menu__item">Sobre</a>
+                <a href="" class="menu__item">Documentação</a>
             </nav>
         </header>
 
@@ -25,18 +36,21 @@
 
             <section class="conteudo__principal">
                 <div class="conteudo__principal__texto">
-                    <h1 class="principal__titulo">Landing Page</h1>
-                    <h2 class="principal__subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                    <button class="principal__botao">Reservar agora</button>
+                    <h1 class="principal__titulo">I.A do futuro</h1>
+                    <h2 class="principal__subtitulo">Organização e produtividade para sua empresa.</h2>
+                    <button class="principal__botao">Teste grátis!</button>
                 </div>
-                <img src="" alt="" class="principal__imagem">
+                <img src="principal.svg" alt="" class="principal__imagem">
             </section>
 
             <section class="conteudo-secundario">
-                <h3 class="conteudo-secundario__titulo">Lorem</h3>
-                <p class="conteudo-secundario__paragrafo">xxxxxxxxx<strong>xxxxx</strong>xxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                <p class="conteudo-secundario__paragrafo">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                <p class="conteudo-secundario__paragrafo">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <h3 class="conteudo-secundario__titulo">O que ela faz por você?</h3>
+                <p class="conteudo-secundario__paragrafo">1. Automação de tarefas e a melhoria na comunicação com seus
+                    clientes</p>
+                <p class="conteudo-secundario__paragrafo">2. A utilização de um assistente virtual pode ajudar a reduzir
+                    o volume de trabalho dos funcionários</p>
+                <p class="conteudo-secundario__paragrafo">3. Criar chatbots para ajudar os clientes a encontrar
+                    rapidamente as informações de que precisam</p>
             </section>
 
         </main>
@@ -45,10 +59,21 @@
         </main>
 
         <footer class="rodape">
-            <img src="" alt="" class="rodape__imagem">
+            <h1 class="footer__logo-text">Vera.i 2023&copy;</h1>
         </footer>
 
     </body>
+    <script>
+        function clickMenu() {
+            let menu = document.querySelector(".cabecalho__menu")
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block';
+            }
+
+        }
+    </script>
 </body>
 
 </html>
