@@ -11,9 +11,11 @@ font-family: 'Sarala', sans-serif;*/
 
 body {
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .cabecalho {
@@ -24,12 +26,13 @@ body {
     border-bottom: #FFF2E7 0.4px solid;
 }
 
-.cabecalho__logo-text{
+.cabecalho__logo-text {
     font-family: 'Righteous';
     font-weight: 400;
     font-size: 2em;
-    color: #FFF2E7; 
+    color: #FFF2E7;
 }
+
 .cabecalho__menu {
     display: flex;
     gap: 90px;
@@ -44,7 +47,7 @@ body {
     transition: 0.1s;
 }
 
-.menu__item:hover{
+.menu__item:hover {
     transform: scale(1.1);
     color: white;
 }
@@ -73,7 +76,7 @@ body {
 }
 
 
-.principal__botao{
+.principal__botao {
     width: 185px;
     height: 67px;
     font-family: 'Sarala';
@@ -97,32 +100,32 @@ body {
 
 }
 
-.principal__botao:hover{
-    background:#FFF2E7;
+.principal__botao:hover {
+    background: #FFF2E7;
     transform: scale(1.1);
 }
 
-.conteudo{
+.conteudo {
     margin: 0% 18% 0% 18%;
     animation-name: has-shown;
     animation-duration: 3s;
 }
 
-.conteudo__principal__texto{
+.conteudo__principal__texto {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.conteudo-secundario{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 29px;
-  margin-top: 60px;
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+    margin-top: 60px;
 }
 
-.conteudo-secundario__titulo{
+.conteudo-secundario__titulo {
     font-family: Righteous;
     font-size: 1.5em;
     font-weight: 400;
@@ -131,7 +134,7 @@ body {
     padding-top: 50px;
 }
 
-.conteudo-secundario__paragrafo{
+.conteudo-secundario__paragrafo {
     font-family: Sarala;
     font-size: 1em;
     font-weight: 700;
@@ -139,32 +142,33 @@ body {
 }
 
 
-.rodape{
+.rodape {
     margin-top: 80px;
     padding: 40px;
     border-top: #FFF2E7 0.4px solid;
-    
+
 }
 
-.footer__logo-text{
+.footer__logo-text {
     text-align: center;
     font-family: 'Righteous';
     font-weight: 400;
     font-size: 2em;
-    color: #FFF2E7; 
+    color: #FFF2E7;
 }
 
-.cabecalho__menu-burger{
+.cabecalho__menu-burger {
     display: none;
 }
 
 
 @keyframes has-shown {
-    from{
+    from {
         opacity: 0;
         transform: translateY(50px)
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
