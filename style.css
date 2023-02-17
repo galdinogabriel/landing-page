@@ -30,7 +30,7 @@ body {
 }
 .cabecalho__menu {
     display: flex;
-    gap: 100px;
+    gap: 90px;
     font-weight: 400;
     font-size: 1em;
 }
@@ -39,9 +39,11 @@ body {
     color: #FFF2E7;
     font-family: 'Sarala', sans-serif;
     cursor: pointer;
+    transition: 0.1s;
 }
 
 .menu__item:hover{
+    transform: scale(1.1);
     color: white;
 }
 
@@ -83,16 +85,25 @@ body {
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-style: none;
     cursor: pointer;
-    
+    transition: 0.3s;
+    opacity: 0;
+    animation: has-shown;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    transition: all 1s;
+
 }
 
 .principal__botao:hover{
-    background:rgb(255, 255, 255);
-    font-size: 1.6em;
+    background:#FFF2E7;
+    transform: scale(1.1);
 }
 
 .conteudo{
     margin: 0% 18% 0% 18%;
+    animation-name: has-shown;
+    animation-duration: 3s;
 }
 
 .conteudo__principal__texto{
@@ -143,4 +154,15 @@ body {
 
 .cabecalho__menu-burger{
     display: none;
+}
+
+
+@keyframes has-shown {
+    from{
+        opacity: 0;
+        transform: translateY(50px)
+    }
+    to{
+        opacity: 1;
+    }
 }
